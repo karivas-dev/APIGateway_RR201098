@@ -9,6 +9,29 @@
           "Port": 7025
         }
       ],
+
+      //Ejercicio Complementario G7: Autenticación de acceso por rol de usuario
+
+      //"AuthenticationOptions": {
+      //"AuthenticationProviderKey": "Bearer",
+      //"AllowedScopes": []
+      //},
+
+
+      //API detrás del gateway no necesita la identidad del usuario
+
+      //"RouteClaimsRequirement": {
+      //"Role": "Admin"
+      //},
+
+
+      //API detrás del gateway necesita la identidad del usuario
+
+      //"AddHeadersToRequest": {
+      //"claims_name": "Claims[name] > value > |",
+      //"claims_role": "Claims[Role] > value > |"
+      //},
+
       "UpstreamPathTemplate": "/productos",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamHttpMethod": "Get",
